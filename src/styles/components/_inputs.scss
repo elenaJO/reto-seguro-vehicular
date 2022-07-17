@@ -56,7 +56,7 @@
   }
 
   i {
-		background-image: url('../../assets/icons/chevrot.svg');
+		background-image: url('src/assets/icons/chevrot.svg');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -89,7 +89,7 @@
 	&__box:checked + &__label:before {
 		content: '';
 		background-color: $green;
-		background-image: url('../../assets/icons/check.svg');
+		background-image: url('src/assets/icons/check.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: auto;
@@ -127,7 +127,7 @@
 	}
 
 	&__radio:checked + &__label:before {
-		background-image: url('../../assets/icons/circle.svg');
+		background-image: url('src/assets/icons/circle.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: auto;

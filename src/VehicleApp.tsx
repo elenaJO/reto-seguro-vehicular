@@ -1,14 +1,12 @@
-import { BtnApp } from './components/shared/buttons/BtnApp';
 import { FooterApp } from './components/shared/FooterApp';
 import { HeaderApp } from './components/shared/HeaderApp';
-import { HomeBanner } from './components/home/HomeBanner';
+import { HomeScreen } from './components/home/HomeScreen';
 
 export const VehicleApp = () => {
 	return (
 		<div>
-			<BtnApp title={'COTÍZALO'}/>
 			<HeaderApp/>
-			<HomeBanner/>
+			<HomeScreen/>
 			<FooterApp/>	
 		</div>
 	)

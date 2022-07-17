@@ -1,0 +1,12 @@
+.footer-app {
+	border-top: 1px solid $light-blue;
+	padding: 25px 32px;
+	width: 100%;
+
+	&__text {
+		color: $light-grey;
+		font-family: 'Roboto', sans-serif;
+		font-size: $small;
+		line-height: $medium20;
+	}
+}

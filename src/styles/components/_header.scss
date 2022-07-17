@@ -1,0 +1,24 @@
+.header-app {
+	align-items: center;
+	border-bottom: 1px solid $light-blue;
+	color: $medium-grey;
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	justify-content: space-between;
+	padding: 20px 32px;
+	width: 100%;
+
+	&__text {
+		&--call {
+			color: $medium-purple;
+			font-size: 14px;
+			margin-left: 8px;
+		}
+	}
+
+	&__content-call {
+		display: flex;
+		align-items: center;
+	}
+}

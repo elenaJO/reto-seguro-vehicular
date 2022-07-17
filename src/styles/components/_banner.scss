@@ -1,0 +1,48 @@
+.home-banner {
+	align-items: center;
+	background-color: $medium-white;
+	color: $primary;
+	display: flex;
+	justify-content: space-between;
+
+	&__content-image {
+		height: 243px;
+		position: relative;
+		width: 182px;
+	}
+
+	 &__image {
+		background-image: url('src/assets/images/person-banner-mobile.svg');
+		background-position-x: right;
+		background-repeat: no-repeat;
+		height: 100%;
+		position: absolute;
+    top: 24px;
+		width: 100%;
+	 }
+
+	&__text--small {
+		font-size: $small10;
+		font-weight: 700;
+		margin-bottom: 8px;
+	}
+
+	&__text--title {
+		font-size: $large28;
+		line-height: $large36;
+		margin-bottom: 18px;
+	}
+
+	&__text--red {
+		color: $rimac-red;
+	}
+
+	&__content-text {
+		padding: 0 0 0 32px;
+	}
+
+	&__text--subtitle {
+		font-family: 'Roboto', sans-serif;
+		line-height: $large;
+	}
+}

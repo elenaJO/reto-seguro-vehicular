@@ -1,0 +1,64 @@
+.arm-plan-header {
+	background-color: $medium-white;
+	padding: 40px 32px 56px 32px;
+
+	&__title {
+		color: $primary;
+		font-size: $large28;
+		line-height: $large36;
+		margin-bottom: 8px;
+	}
+
+	&__subtitle {
+		color: $medium-grey;
+		font-size: $medium16;
+		line-height: $large28;
+		margin-bottom: 24px;
+	}
+
+	&__card {
+		background-color: $white;
+		border-radius: 12px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__text--small {
+		color: $light-grey;
+		font-family: 'Roboto', sans-serif;
+		font-size: $small;
+		letter-spacing: 0.2px;
+		line-height: 20px;
+	}
+
+	&__text {
+		color: $primary;
+		font-size: $medium16;
+		line-height: 24px;
+	}
+
+	&__btn {
+		background-color: transparent;
+		border: none;
+		color: $medium-purple;
+		font-size: 10px;
+		line-height: $medium16;
+		letter-spacing: 0.8px;
+	}
+
+	&__card-image {
+		position: relative;
+    height: 148px;
+		width: 80px;
+	}
+
+	&__image {
+		position: absolute;
+    bottom: 0;
+		right: 0;
+	}
+
+	&__content {
+		padding: 24px 0 24px 24px;
+	}
+}

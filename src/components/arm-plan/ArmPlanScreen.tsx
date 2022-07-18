@@ -1,5 +1,6 @@
 import { ArmPlanHeader } from './ArmPlanHeader';
 import { ArmPlanOffOn } from './ArmPlanOffOn';
+import { ArmPlanTotal } from './ArmPlanTotal';
 import { StepsApp } from '../shared/StepsApp';
 
 export const ArmPlanScreen = () => {
@@ -11,6 +12,7 @@ export const ArmPlanScreen = () => {
 			/>
 			<ArmPlanHeader/>
 			<ArmPlanOffOn/>
+			<ArmPlanTotal/>
 		</>
 	)
 }

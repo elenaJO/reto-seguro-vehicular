@@ -1,9 +1,16 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { setCoverageAmount } from '../../store/vehicle/vehicleSlice';
+
 import { CounterApp } from '../shared/CounterApp';
+import { rangeOfValues } from '../../utils/dataEnum';
 
 export const ArmPlanCounter = () => {
+	const dispatch = useDispatch();
 
-	const handleChangeValue = (value: number) => {
-		console.log(value);
+	const { coverageAmount } = useSelector((state: any) => state.vehicle);
+
+  const handleChangeValue = (value: number) => {
+		dispatch(setCoverageAmount(value));
 	}
 
   return (
@@ -17,9 +24,9 @@ export const ArmPlanCounter = () => {
 			</div>
       <CounterApp
 				numberAdd={ 100 }
-				minorRank={ 12500 }
-				higherRank={ 16500}
-				initialValue={ 12000 }
+				minorRank={ rangeOfValues.min }
+				higherRank={ rangeOfValues.max }
+				initialValue={ coverageAmount }
 				changeValue={ true }
 				handleChangeValue={ handleChangeValue }
 			/>

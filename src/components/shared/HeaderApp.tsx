@@ -1,6 +1,8 @@
 import logoRimac from '../../assets/images/logo-rimac.svg';
 import imgPhone from '../../assets/icons/phone.svg';
 
+console.log('imgPhone', imgPhone)
+
 export const HeaderApp = () => {
 
 	return (

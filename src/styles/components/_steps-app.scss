@@ -4,6 +4,10 @@
 	justify-content: space-between;
 	padding: 16px 32px;
 
+	@media only screen and (min-width: 1200px) {
+		display: none;
+	}
+
 	&__step {
 		color: $medium-grey;
 		font-size: $small10;
@@ -33,5 +37,72 @@
 
 	&__back {
 		width: 48px;
+	}
+}
+
+.steps-app-desktop {
+	display: none;
+	height: calc(100% - 68px);
+	padding: 52px 0 0 120px;
+
+	@media only screen and (min-width: 1200px) {
+		display: block;
+	}
+
+	&__container-step {
+		display: flex;
+
+		&:last-child {
+			.steps-app-desktop__step::before {
+				content: none
+			}
+		}
+	}
+
+	&__step {
+		align-items: center;
+		border: 1px solid $border-grey;
+		border-radius: 50%;
+		color: $border-grey;
+		display: flex;
+		font-size: $small;
+		font-weight: 700;
+    justify-content: center;
+		line-height: $medium16;
+		height: 24px;
+		margin-bottom: 44px;
+		position: relative;
+		width: 24px;
+
+		&.active {
+			background-color: $medium-purple;
+			border: 1px solid transparent;
+			color: white;
+		}
+
+		&::before {
+			border-top: 1px dashed $light-blue;
+			bottom: 0;
+			content: "";
+			left: -12px;
+			position: absolute;
+			right: 0;
+			transform: rotate(90deg);
+			top: 44px;
+			width: 44px;
+			z-index: 1;
+		}
+	}
+
+	&__step-name {
+		color: $light-grey;
+		font-size: $medium16;
+		font-weight: 400;
+		line-height: $large;
+		margin-left: 16px;
+
+		&.active {
+			color: $primary;
+		}
 	}
 }

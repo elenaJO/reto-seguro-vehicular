@@ -5,7 +5,9 @@ export const WelcomeScreen = () => {
 	return (
 		<>
 			<WelcomeBanner/>
-			<FooterApp/>
+			<div className="is-mobile">
+				<FooterApp/>
+			</div>
 		</>
 	)
 }

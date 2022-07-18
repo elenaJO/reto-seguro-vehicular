@@ -16,3 +16,19 @@
 	color: $rimac-red;
 	font-size: $small10;
 }
+
+.is-mobile {
+	display: block;
+
+	@media only screen and (min-width: 1200px) {
+		display: none;
+	}
+}
+
+.is-desktop {
+	display: none;
+
+	@media only screen and (min-width: 1200px) {
+		display: block;
+	}
+}

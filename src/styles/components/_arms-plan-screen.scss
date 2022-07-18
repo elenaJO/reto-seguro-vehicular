@@ -1,0 +1,29 @@
+.arm-plan-screen {
+  @media only screen and (min-width: 1200px) {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 68px;
+	}
+
+	&__steps {
+		@media only screen and (min-width: 1200px) {
+			background-color: $medium-white;
+			width: 408px;
+		}
+	}
+
+	&__amounts {
+		@media only screen and (min-width: 1200px) {
+			display: flex;
+			margin: auto;
+			padding-top: 52px;
+		}
+	}
+
+	&__coverage {
+		@media only screen and (min-width: 1200px) {
+			margin-right: 5%;
+			max-width: 400px;
+		}
+	}
+}

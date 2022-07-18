@@ -2,6 +2,11 @@
 	background-color: $medium-white;
 	padding: 40px 32px 56px 32px;
 
+	@media only screen and (min-width: 1200px) {
+		background-color: transparent;
+		padding: 0;
+	}
+
 	&__title {
 		color: $primary;
 		font-size: $large28;
@@ -14,6 +19,10 @@
 		font-size: $medium16;
 		line-height: $large28;
 		margin-bottom: 24px;
+
+		@media only screen and (min-width: 1200px) {
+			margin-bottom: 44px;
+		}
 	}
 
 	&__card {
@@ -21,6 +30,11 @@
 		border-radius: 12px;
 		display: flex;
 		justify-content: space-between;
+
+		@media only screen and (min-width: 1200px) {
+			border: 3px solid $high-grey;
+			margin: 0 auto;
+		}
 	}
 
 	&__text--small {
@@ -37,6 +51,15 @@
 		line-height: 24px;
 	}
 
+	&__btn {
+		background-color: transparent;
+		border: none;
+		color: $medium-purple;
+		font-size: 10px;
+		line-height: $medium16;
+		letter-spacing: 0.8px;
+	}
+
 	&__card-image {
 		position: relative;
     height: 148px;
@@ -51,5 +74,38 @@
 
 	&__content {
 		padding: 24px 0 24px 24px;
+
+		@media only screen and (min-width: 1200px) {
+			padding: 40px 0 40px 32px;
+		}
+	}
+
+	&__button-back {
+		align-items: center;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 24px;
+	}
+
+	&__button-back-text {
+		color: $light-grey;
+		font-size: $small;
+		line-height: $medium16;
+		margin-left: $medium16;
+	}
+
+	&__title_desktop {
+		color: $primary;
+		font-size: 40px;
+		font-weight: 400;
+		line-height: 48px;
+		margin-bottom: 8px;
+
+		&--red {
+			color: $rimac-red;
+		}
 	}
 }

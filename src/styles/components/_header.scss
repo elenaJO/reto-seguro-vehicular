@@ -1,5 +1,6 @@
 .header-app {
 	align-items: center;
+	background-color: $white;
 	border-bottom: 1px solid $light-blue;
 	color: $medium-grey;
 	display: flex;
@@ -7,13 +8,26 @@
 	font-weight: 400;
 	justify-content: space-between;
 	padding: 20px 32px;
+	top: 0;
 	width: 100%;
+	z-index: 1;
+
+	@media only screen and (min-width: 1200px) {
+		padding: 24px 120px;
+		position: fixed;
+	}
 
 	&__text {
 		&--call {
 			color: $medium-purple;
-			font-size: 14px;
+			font-size: $medium;
 			margin-left: 8px;
+		}
+
+		&--question {
+			color: $medium-grey;
+			font-size: $small;
+			margin-right: 23px;
 		}
 	}
 
@@ -25,5 +39,9 @@
 	&.ishome {
 		background-color: $medium-white;
 		border-bottom: none;
+
+		@media only screen and (min-width: 1200px) {
+			background-color: transparent;
+		}
 	}
 }

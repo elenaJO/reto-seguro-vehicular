@@ -4,6 +4,12 @@
 	justify-content: space-between;
 	padding: 14px 32px;
 
+	@media only screen and (min-width: 1200px) {
+		box-shadow: none;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+
 	&__amount {
 		color: $primary;
 		font-size: $large;
@@ -15,9 +21,50 @@
 		font-size: $small10;
 		letter-spacing: 0.8px;
 		line-height: $medium16;
+
+		&--big {
+			font-size: $small;
+			margin-bottom: 10px;
+		}
 	}
 
 	&__btn {
 		min-width: 168px;
+
+		@media only screen and (min-width: 1200px) {
+			margin-top: 32px;
+		}
+	}
+
+	&__text-roboto {
+		color: $medium-grey;
+		font-size: $medium;
+		line-height: 30px;
+
+		&--small {
+			font-size: $small;
+			line-height: $medium20;
+		}
+	}
+
+	&__content-price {
+		border-bottom: 1px solid $light-blue;
+		padding: 0 0 19px 0;
+	}
+
+	&__content-benefits-list {
+		padding: 24px 0 0 0;
+	}
+
+	&__title-benefits {
+		color: $primary;
+		font-size: $medium16;
+		font-weight: 400;
+		margin-bottom: $small;
+	}
+
+	&__benefits-list {
+		list-style-image: url('/src/assets/icons/check_green.svg');
+		padding-left: 18px;
 	}
 }

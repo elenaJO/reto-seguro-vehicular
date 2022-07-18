@@ -1,0 +1,78 @@
+.welcome-banner {
+	@media only screen and (min-width: 1200px) {
+		display: flex;
+		height: 100vh;
+	}
+
+	&__image {
+		background-image: url('/src/assets/images/person-welcome-mobile.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 208px;
+		position: relative;
+
+		@media only screen and (min-width: 1200px) {
+			background-image: url('/src/assets/images/person-welcome.svg');
+			background-size: auto;
+			height: auto;
+			width: 35%;
+		}
+	}
+
+	&__content {
+		padding: 45px 32px 56px 32px;
+
+		@media only screen and (min-width: 1200px) {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			flex: auto;
+			padding: 0;
+		}
+	}
+
+	&__title {
+		color: $primary;
+		font-size: $large28;
+		line-height: $large36;
+
+		&--red {
+			color: $rimac-red;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: $large36;
+			line-height: 48px;
+		}
+	}
+
+	&__message {
+		color: $medium-grey;
+		font-size: $medium16;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		line-height: $large28;
+		margin: 24px 0 40px 0;
+
+		&--email {
+			font-weight: 400;
+		}
+	}
+
+	&__content-small {
+		@media only screen and (min-width: 1200px) {
+			max-width: 480px;
+		}
+	}
+
+	&__below-image {
+		@media only screen and (min-width: 1200px) {
+			background: $medium-white;
+			height: 100%;
+			position: absolute;
+			width: 70%;
+			z-index: -1;
+		}
+	}
+}

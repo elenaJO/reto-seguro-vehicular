@@ -156,21 +156,47 @@ export const ArmPlanTab = () => {
 								<img src={tabs[key].image} alt="" />
 								<span className="arm-plan-tab__content-tab__case">{ tabs[key].title }</span>
 							</div>
-							<SwitchApp
-								name={ tabs[key].name }
-								handleCheckChange={ handleCheckPartial }
-								checked={ tabs[key].value || false}
-								disabled={ tabs[key].disabled }
-							/>
+							<div className="is-mobile">
+								<SwitchApp
+									name={ tabs[key].name }
+									handleCheckChange={ handleCheckPartial }
+									checked={ tabs[key].value || false}
+									disabled={ tabs[key].disabled }
+								/>
+							</div>
+							<button
+								className={ `arm-plan-tab__content-tab__button-open is-desktop ${tabs[key].open ? 'open' : 'close' }` }
+								onClick={ () => changeTab(key, !tabs[key].open, 'open')}
+							>
+								<img src={ check } alt="" />
+							</button>
 						</div>
-						<div className="arm-plan-tab__content-tab__content-text">
+						<div className="arm-plan-tab__content-tab__content-text is-desktop">
+							<button
+								className="arm-plan-tab__content-tab__coverage"
+								disabled={ tabs[key].disabled }
+								onClick={ () => 
+									handleCheckPartial(
+										{ target: 
+											{ 
+												name: tabs[key].name,
+												checked: !tabs[key].value
+											}
+										}
+									)}>
+								<img 
+									src={ tabs[key].value ? remove : add } 
+									alt={ tabs[key].value ? 'quitar' : 'agregar' } 
+								/>
+								<span className="arm-plan-tab__content-tab__coverage-text">{ tabs[key].value ? 'QUITAR' : 'AGREGAR' }</span>
+							</button>
 							<p 
 								className={`arm-plan-tab__content-tab__paragraph mb-16 ${!tabs[key].open ? 'not-show': ''}`}
 							>
 								{ tabs[key].text }
 							</p>
 							<button 
-								className="arm-plan-tab__content-tab__btn"
+								className="arm-plan-tab__content-tab__btn is-mobile"
 								onClick={ () => changeTab(key, !tabs[key].open, 'open')}
 							>
 								<span 

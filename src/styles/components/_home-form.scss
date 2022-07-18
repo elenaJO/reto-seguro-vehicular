@@ -1,6 +1,14 @@
 .home-form {
 	padding: 40px 32px 54px;
 
+	@media only screen and (min-width: 1200px) {
+		display: flex;
+		flex: auto;
+    flex-direction: column;
+    justify-content: center;
+		padding: 0;
+	}
+
 	&__title {
 		color: $primary;
 		font-size: $large;
@@ -37,5 +45,12 @@
 		cursor: pointer;
 		margin-left: 0;
 		text-decoration: underline;
+	}
+
+	&__content {
+		@media only screen and (min-width: 1200px) {
+			margin: 0 auto;
+			max-width: 288px;
+		}
 	}
 }

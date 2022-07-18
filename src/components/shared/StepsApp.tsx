@@ -1,6 +1,5 @@
-import { useNavigate } from 'react-router-dom';
-
 import iconBack from '../../assets/icons/icon_back_purple.svg';
+import { useNavigate } from 'react-router-dom';
 
 type AutoDataStepsArgs = {
 	totalStep: number,
@@ -16,7 +15,7 @@ export const StepsApp = ({ totalStep, step }: AutoDataStepsArgs) => {
 
 	return (
 		<>
-			<div className="steps-app">
+			<div className="steps-app is-mobile">
 				<img 
 					src={iconBack} 
 					alt="atras" 
@@ -35,6 +34,14 @@ export const StepsApp = ({ totalStep, step }: AutoDataStepsArgs) => {
 						<div></div>
 					</div>
 				</div>
+			</div>
+			<div className="steps-app-desktop is-desktop">
+				{Array.from(Array(totalStep), (e, i) => {
+					return <div className="steps-app-desktop__container-step" key={ i }>
+						<div className={`steps-app-desktop__step ${ step === i + 1 ? 'active' : '' }`}>{ i + 1 }</div>
+						<span className={`steps-app-desktop__step-name ${ step === i + 1 ? 'active' : '' }`}>Arma tu plan</span>
+					</div>
+				})}
 			</div>
 		</>
 	)

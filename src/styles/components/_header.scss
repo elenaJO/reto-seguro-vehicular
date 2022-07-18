@@ -21,4 +21,9 @@
 		display: flex;
 		align-items: center;
 	}
+
+	&.ishome {
+		background-color: $medium-white;
+		border-bottom: none;
+	}
 }

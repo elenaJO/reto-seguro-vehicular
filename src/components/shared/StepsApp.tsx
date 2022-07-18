@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import iconBack from '../../assets/icons/icon_back_purple.svg';
 
 type AutoDataStepsArgs = {
@@ -6,6 +8,11 @@ type AutoDataStepsArgs = {
 }
 
 export const StepsApp = ({ totalStep, step }: AutoDataStepsArgs) => {
+	const navigate = useNavigate();
+
+	const goToBack = () => {
+		navigate(-1);
+	}
 
 	return (
 		<>
@@ -15,6 +22,7 @@ export const StepsApp = ({ totalStep, step }: AutoDataStepsArgs) => {
 					alt="atras" 
 					className="steps-app__back"
 					height="32"
+					onClick={ goToBack }
 				/>
 				<div className="steps-app__content-step">
 					<span className="steps-app__step">PASO {step} DE {totalStep}</span>

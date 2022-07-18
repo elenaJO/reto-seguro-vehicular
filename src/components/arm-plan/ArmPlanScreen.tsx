@@ -1,3 +1,4 @@
+import { ArmPlanCounter } from './ArmPlanCounter';
 import { ArmPlanHeader } from './ArmPlanHeader';
 import { ArmPlanOffOn } from './ArmPlanOffOn';
 import { ArmPlanTotal } from './ArmPlanTotal';
@@ -11,6 +12,7 @@ export const ArmPlanScreen = () => {
 				totalStep={2}
 			/>
 			<ArmPlanHeader/>
+			<ArmPlanCounter/>
 			<ArmPlanOffOn/>
 			<ArmPlanTotal/>
 		</>

@@ -1,0 +1,34 @@
+.arm-plan-counter {
+	padding: 44px 32px 0 32px;
+
+	&__text {
+		color: $primary;
+		font-size: $large28;
+		line-height: $large36;
+		margin-bottom: 8px;
+	}
+
+	&__text--small {
+		color: $primary;
+		font-size: $medium16;
+		line-height: $large;
+		letter-spacing: 0.2px;
+		margin-bottom: 4px
+	}
+
+	&__price {
+		color: $medium-grey;
+		font-size: $small;
+		letter-spacing: 0.6px;
+		line-height: $medium16;
+	}
+
+	.text-left {
+		border-right: 1px solid $light-blue;
+		padding-right: 12px;
+	}
+	
+	.text-right {
+		padding-left: 12px;
+	}
+}

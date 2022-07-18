@@ -1,0 +1,23 @@
+.arm-plan-total {
+	box-shadow: 0px 1px 4px rgba(163, 171, 204, 0.06), 0px 8px 30px rgba(20, 43, 127, 0.1);
+	display: flex;
+	justify-content: space-between;
+	padding: 14px 32px;
+
+	&__amount {
+		color: $primary;
+		font-size: $large;
+		line-height: $large32;
+	}
+
+	&__text {
+		color: $primary;
+		font-size: $small10;
+		letter-spacing: 0.8px;
+		line-height: $medium16;
+	}
+
+	&__btn {
+		min-width: 168px;
+	}
+}

@@ -1,6 +1,14 @@
-import { BtnApp } from "../shared/buttons/BtnApp"
+import { BtnApp } from "../shared/buttons/BtnApp";
+import { useNavigate } from 'react-router-dom';
 
 export const ArmPlanTotal = () => {
+
+	const navigate = useNavigate();
+
+	const goToWelcome = () => {
+		navigate('/bienvenido');
+	}
+
 	return (
 		<div className="arm-plan-total">
 			<div>
@@ -8,7 +16,10 @@ export const ArmPlanTotal = () => {
 				<p className="arm-plan-total__text">MENSUAL</p>
 			</div>
 			<div className="arm-plan-total__btn">
-				<BtnApp title="lo quiero"/>
+				<BtnApp 
+					title="lo quiero"
+					handleClick={ goToWelcome }
+				/>
 			</div>
 		</div>
 	)

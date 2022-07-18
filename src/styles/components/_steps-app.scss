@@ -1,0 +1,37 @@
+.steps-app {
+	border-bottom: 1px solid $light-blue;
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 32px;
+
+	&__step {
+		color: $medium-grey;
+		font-size: $small10;
+		font-weight: 700;
+		letter-spacing: 0.8px;
+	}
+
+	&__bar {
+		background-color: $light-blue;
+		border-radius: 20px;
+		flex: auto;
+		height: 6px;
+		margin-left: 16px;
+
+		&--active {
+			background-color: $medium-purple;
+			border-radius: 20px;
+			height: 100%;
+		}
+	}
+
+	&__content-step {
+		align-items: center;
+		display: flex;
+		flex: auto;
+	}
+
+	&__back {
+		width: 48px;
+	}
+}

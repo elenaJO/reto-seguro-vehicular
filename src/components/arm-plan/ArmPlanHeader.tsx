@@ -9,7 +9,6 @@ export const ArmPlanHeader = () => {
 				<div className="arm-plan-header__content">
 					<p className="arm-plan-header__text--small">Placa: C2U-114</p>
 					<p className="arm-plan-header__text mb-16">Wolkswagen 2019 <br />Golf</p>
-					<button className="arm-plan-header__btn">EDITAR</button>
 				</div>
 				<div className="arm-plan-header__card-image">
 					<img 
